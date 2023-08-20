@@ -1,0 +1,1 @@
+export const imageValidList = ['image/gif', 'image/jpeg', 'image/webp', 'image/pjpeg', 'image/x-png', 'image/png', 'image/svg+xml'];

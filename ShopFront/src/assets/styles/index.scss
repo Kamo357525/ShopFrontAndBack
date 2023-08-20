@@ -1,0 +1,492 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+  font-size: 26px;
+}
+
+.homeHeader {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  border: 2px solid aqua;
+  padding: 0 10px;
+  justify-content: space-between;
+
+  .btnBlock {
+    display: flex;
+  }
+}
+
+.logoBlock {
+  width: 60px;
+  height: 60px;
+  margin: 10px;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+  }
+}
+
+.forms {
+  border: 2px solid aqua;
+  border-radius: 10px;
+  padding: 10px;
+  width: 25%;
+  margin: 10px auto;
+
+  .filePicker {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  ul {
+    list-style-type: none;
+
+    .regFormError {
+      color: red;
+    }
+  }
+}
+
+.userBlock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #cccccc;
+  padding: 5px;
+  border-radius: 5px;
+
+  .goProfile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    h4 {
+      margin-left: 5px;
+    }
+
+    img {
+      border: 2px solid black;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+    }
+  }
+}
+
+.profileBlock {
+  width: 100%;
+  border: 5px solid aqua;
+  border-radius: 10px;
+  margin: 5px auto;
+  display: flex;
+
+  .leftBlock {
+    width: 40%;
+    border-right: 2px solid aqua;
+    display: flex;
+    flex-direction: column;
+
+    .userInfoBlock {
+      display: flex;
+      justify-content: space-around;
+      border-bottom: 5px solid black;
+
+      .userInfo {
+        width: 55%;
+      }
+    }
+
+    .infoUserItem {
+      border-bottom: 2px solid #cccccc;
+      display: flex;
+      align-items: center;
+      margin: 15px 0;
+      flex-wrap: wrap;
+      overflow: hidden;
+
+      h2 {
+        font-size: 18px;
+        color: darkgray;
+      }
+
+      h1 {
+        margin-left: 3px;
+        color: aqua;
+        font-size: 20px;
+      }
+    }
+
+    .nav_list {
+      h2 {
+        color: black;
+        font-size: 24px;
+        padding-left: 5px;
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+
+    img {
+      width: 40%;
+      object-fit: cover;
+      margin: 10px auto;
+      display: block;
+    }
+  }
+
+  .rightBlock {
+    width: 60%;
+  }
+}
+
+.filePicker {
+  margin: 0 auto;
+  display: block;
+  width: 50%;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  .inpReg {
+    display: none;
+  }
+
+  .userRegInpPhoto {
+    width: 120px;
+    height: 120px;
+    display: block;
+    object-fit: cover;
+    margin: 10px auto;
+  }
+}
+
+.btnReg {
+  display: block;
+  margin: 10px auto;
+}
+
+.editProfile {
+  .forms {
+    width: 45%;
+    border: none;
+  }
+}
+
+.formCreateProduct {
+  .addProduct {
+    width: 90%;
+    margin: 0 auto;
+    border: 2px solid #cccccc;
+    padding: 5px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  img {
+    margin: 5px 0;
+    object-fit: fill;
+    width: 22%;
+    border: 2px solid aqua;
+    height: 120px;
+  }
+
+  .forms {
+    width: 45%;
+    border: none;
+  }
+}
+
+.home {
+  margin: 10px auto;
+  border: 3px solid aqua;
+
+  .paginationBlock {
+    display: block;
+    align-items: center;
+    margin: 10px auto;
+    display: table;
+    padding: 5px;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  h1 {
+    margin: 5px auto;
+  }
+
+  .allProductsItem {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    .productItem {
+      width: 23%;
+      height: 335px;
+      border: 2px solid #cccccc;
+      padding: 2px;
+      border-radius: 5px;
+      margin: 10px 0;
+      position: relative;
+
+      .searchIcon {
+        width: 100px;
+        display: none;
+        height: 80px;
+        left: 50%;
+        top: 60px;
+        position: absolute;
+        border: none;
+        transform: translate(-50%);
+      }
+
+      &:hover {
+        .searchIcon {
+          display: block;
+        }
+
+        cursor: pointer;
+      }
+
+      h4 {
+        border-bottom: 3px solid #cccccc;
+        margin: 6px 0;
+        align-items: center;
+        padding: 0 5px;
+      }
+
+      img {
+        width: 80%;
+        height: 63%;
+        object-fit: fill;
+        border-bottom: 2px solid black;
+        margin: 0 auto;
+        display: block;
+      }
+    }
+  }
+}
+
+#deleteProdYes {
+  background-color: orangered;
+  width: 100px;
+}
+
+#deleteProdNo {
+  background-color: aqua;
+  width: 80px;
+  margin-left: 10px;
+}
+
+
+.userProductsBlock {
+  padding: 5px;
+  position: relative;
+
+  .editDeleteWrapper {
+    display: none;
+
+    .editDelete {
+      position: absolute;
+      display: flex;
+      width: 40px;
+      height: 84px;
+      flex-direction: column;
+      transition: 100ms;
+
+      .edit, .delete {
+        width: 40px;
+        height: 40px;
+        object-fit: cover;
+        border: 2px solid black;
+        margin-bottom: 2px;
+        transition: 100ms;
+
+      }
+    }
+  }
+
+  .paginationBlock {
+    display: table;
+    margin: 10px auto;
+  }
+
+  h1 {
+    margin: 10px auto;
+  }
+
+  .userProducts {
+    display: flex;
+    border: 3px solid aqua;
+    border-radius: 10px;
+    padding: 10px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .userProductItems {
+    width: 23%;
+    height: 270px;
+    overflow: hidden;
+    margin: 10px 0;
+    border: 2px solid #cccccc;
+    padding: 4px;
+    border-radius: 5px;
+
+    &:hover {
+      cursor: pointer;
+
+      .editDeleteWrapper {
+        display: block;
+      }
+    }
+
+    h4 {
+      font-size: 18px;
+      margin: 3px 0;
+      padding: 3px;
+      border-bottom: 2px solid #cccccc;
+    }
+
+    img {
+      width: 100%;
+      height: 140px;
+      object-fit: fill;
+    }
+  }
+}
+
+.btn-secondary {
+  margin-top: 10px;
+}
+
+.prodInfoCarousel {
+
+
+  h1 {
+    border: 2px solid #cccccc;
+    margin: 0;
+  }
+
+  .carousel-inner {
+    width: 100%;
+    height: 300px;
+    border: 2px solid #cccccc;
+
+    .carousel-item {
+      height: 300px;
+      border-bottom: 5px solid #cccccc;
+
+      .allProdImg {
+        display: block;
+        margin: 0 auto;
+        width: 80%;
+        height: 100%;
+        object-fit: fill;
+      }
+    }
+  }
+}
+
+
+.formsEditProd {
+  ul {
+    list-style-type: none;
+
+    li {
+      color: red;
+      font-size: 20px;
+    }
+  }
+
+  .editProd {
+    width: 100%;
+
+    .deletePhoto {
+      width: 24%;
+      height: 100px;
+      margin: 5px 0;
+      position: relative;
+
+      .delete {
+        width: 35px;
+        height: 35px;
+        position: absolute;
+      }
+    }
+
+    .addPhoto {
+      position: relative;
+
+      .delete {
+        position: absolute;
+        left: 0;
+      }
+    }
+
+    .editProfImgList {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      margin: 10px 0;
+
+      img {
+        width: 100%;
+        height: 100px;
+        border: 2px solid aqua;
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+
+    .editProfActiveImg {
+      width: 90%;
+      margin: 0 auto;
+      height: 300px;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: fill;
+      }
+    }
+  }
+
+  .btns {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .btnEdit {
+    background-color: aqua;
+    width: 100px;
+    height: 40px;
+  }
+
+  .cancel {
+    width: 100px;
+    height: 40px;
+  }
+}
